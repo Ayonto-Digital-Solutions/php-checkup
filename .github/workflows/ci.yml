@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container: php:8.2-cli-alpine
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Install Composer
         run: |
           php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
